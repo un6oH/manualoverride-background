@@ -17,7 +17,7 @@ function draw() {
   translate(width / 2, height / 2);
   rotate(phi);
   noStroke();
-  for (let i = 0; i < numDots; i++) {
+  for (let i = numDots; i >= 0; i--) {
     let a = theta + TWO_PI / numDots * i;
     let b = a + sin(a);
     fill(360 / numDots * i, 100, 100);
